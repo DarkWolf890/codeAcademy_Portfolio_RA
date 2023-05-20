@@ -33,7 +33,7 @@ def display_menu():
 
 
 Item_quantity = 0
-
+display_menu()
 
 
 
