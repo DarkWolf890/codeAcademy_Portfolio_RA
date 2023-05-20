@@ -7,10 +7,10 @@ classes
 menu(title,options)
  clear menu
  set page
- display title
- display options
- check for user input
- change page
+ display page
+   display title
+   display options
+   
  add page 
  remove page
   

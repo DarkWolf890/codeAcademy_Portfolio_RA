@@ -1,13 +1,23 @@
 from random import randint as r
 
-class menu(title = [""],options = [[""]]):
-    displayed_page = [title[0],options[0]]
-    def display_title():
-        pass
+class Menu():
+    options = [[""]]
+    title = [""]
+    page_index = 0
+    def __init__(self,options,title,page_index):
+        self.options = options
+        self.title = title
+        self.page_index = page_index
+        
+        
+    def display_title(title):
+        print(self.title[self.page_index])
+    
     def clear():
         print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-    def page(int):
-        self.displayed_page = [title[int],options[int]]
+    def page():
+        
+        page_index = input("Type a number to select")
     def display_options():
         n = 1
         for option in options:
@@ -23,8 +33,13 @@ class menu(title = [""],options = [[""]]):
             options[-1].append(user_input)
     def remove_page():
         pass
-    def user_input():
-        answer = input("Type a number to select")
-        return answer
-pass
+    
+
+menu = Menu()
+Menu.add_page()
+Menu.page(1)
+Menu.display_title()
+
+
+
 
