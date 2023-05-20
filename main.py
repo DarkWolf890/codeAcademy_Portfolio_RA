@@ -14,9 +14,7 @@ def display_options(options):
   for option in options:
     print(n,option + "\n")
     n += 1
-  if input in range(1,n):
-      answer = input
-      return answer   
+  return (input("Select typing any option number."))
 
 def display_menu():
   img_logo =  '''
