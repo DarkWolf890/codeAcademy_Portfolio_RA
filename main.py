@@ -65,7 +65,7 @@ def search_menu():
  '''
   print(search_title)
   for item in items:
-    print(item)  
+         print(item)  
 
 
 
@@ -75,15 +75,15 @@ def search_menu():
 answer = display_menu()
 print(answer)
 if answer == 1:
-  add_menu()
+    add_menu()
 elif answer == 2:
-  search_menu()
+    search_menu()
 elif answer == 3:
-  remove_menu()
+    remove_menu()
 elif answer == 4:
-  settings_menu()
+    settings_menu()
 else:
-  answer = input("Resposta invalida, prueba otra vez.")
+    answer = input("Resposta invalida, prueba otra vez.")
 
 
 
