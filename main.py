@@ -1,5 +1,4 @@
 from random import randint as r
-Item_type = ""
 
 
 electronics = ["capacitor","Resistor","mcu","transistor","relay"]
@@ -32,8 +31,10 @@ def display_menu():
 
 
 
-Item_quantity = 0
+
+start_options = ["Add an Item","Search an Item","Remove an Item","Settings",]
 display_menu()
+display_options(start_options)
 
 
 
