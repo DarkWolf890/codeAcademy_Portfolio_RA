@@ -66,11 +66,12 @@ def search_menu():
 
 
 answer = display_menu()
+print(answer)
 if answer == 1:
   pass
 elif answer == 2:
   search_menu()
-  
+
 
 
 
