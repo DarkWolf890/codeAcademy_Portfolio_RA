@@ -37,8 +37,7 @@ def display_menu():
  What do you want to do?\n \n \n
 '''
   answer = display_options(start_options)
-  print(answer)
-
+  
   
   print(img_logo)
   
@@ -49,8 +48,7 @@ def display_menu():
 
 
 display_menu()
-display_options(start_options)
-print()
+
 
 
 
