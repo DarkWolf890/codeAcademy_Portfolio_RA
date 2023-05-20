@@ -10,7 +10,7 @@ class Menu():
         self.page_index = page_index
         
         
-    def display_title(title):
+    def display_title(title[]):
         print(self.title[self.page_index])
     
     def clear():

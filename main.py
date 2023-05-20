@@ -1,5 +1,6 @@
-
+"""Module providingFunction printing python version."""
 class Menu():
+    """Class representing a person"""
     title = []
     options = [[]]
     index = 0
@@ -7,13 +8,22 @@ class Menu():
         self.title = title
         self.options = options
         self.index = index
-    def clear():
+    def clear(self):
+
         print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
-    def page(self):
-        self.index = input("Insert the option typing their number")
-    def display_page():
-        def display_title():
-            pass
-        def display_options():
-            pass
-        Menu.page()            
+
+    def display_page(self):
+        def page(self):
+            self.index = input("Insert the option typing their number")
+        def display_title(self):
+            print(self.title[self.index])
+        def display_options(self):
+            n = 1
+        for option in self.options[self.index]:
+            print(n,option + "\n")
+            n += 1
+        display_title(self)
+        display_options(self)
+        page(self)
+
+
