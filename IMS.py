@@ -17,10 +17,10 @@ class menu(title = [""],options = [[""]]):
     def add_page():
         title.append(input("Insert a title for the menu section:"))
         while True:
-            input = input("Insert one option of the menu")
-            if input == -1:
+            user_input = input("Insert one option of the menu")
+            if user_input == -1:
                 break
-            options[-1].append(input)
+            options[-1].append(user_input)
     def remove_page():
         pass
     def user_input():
