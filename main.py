@@ -1,6 +1,6 @@
 from random import randint as r
 
-
+# This variables will be accesible and editable in the program but i put some of them for testing
 electronics = ["capacitor","Resistor","mcu","transistor","relay"]
 wiring = ["singlecore","multicore"]
 tools = []
@@ -8,7 +8,11 @@ pchardware = ["fans","cpu","ram","hdd","ssd","psu","gpu","pccase"]
 documents = ["manuals","studies"]
 printer = []
 Item_types = [electronics,wiring,tools,pchardware,documents,printer]
+#silly function to clear the terminal and make a new "display"
+def clear_display():
+  print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")  
 
+#function to use within every menu function to display the selectable options
 def display_options(options):
   n = 1
   for option in options:
@@ -16,9 +20,12 @@ def display_options(options):
     n += 1
   answer = input("Select typing any option number.")  
   print("you selected",answer)
+  return answer
+  
 
-
-
+#start menu page options
+start_options = ["Add an Item","Search an Item","Remove an Item","Settings",]
+#Principal menu of the program, simple but not ugly, perfect.
 def display_menu():
   img_logo =  '''
   _   _   _  
@@ -29,6 +36,10 @@ def display_menu():
  Welcome to Inventory Management Software
  What do you want to do?\n \n \n
 '''
+  answer = display_options(start_options)
+  print(answer)
+
+  
   print(img_logo)
   
 
@@ -36,7 +47,7 @@ def display_menu():
 
 
 
-start_options = ["Add an Item","Search an Item","Remove an Item","Settings",]
+
 display_menu()
 display_options(start_options)
 print()
