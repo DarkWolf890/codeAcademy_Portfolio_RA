@@ -26,7 +26,10 @@ def display_options(options):
 #start menu page options
 start_options = ["Add an Item","Search an Item","Remove an Item","Settings",]
 #Principal menu of the program, simple but not ugly, perfect.
+
+
 def display_menu():
+
   img_logo =  '''
   _   _   _  
  / \ / \ / \ 
@@ -36,10 +39,13 @@ def display_menu():
  Welcome to Inventory Management Software
  What do you want to do?\n \n \n
 '''
+  #prints the logo
+  print(img_logo)
+  #scans the user input and saves it
   answer = display_options(start_options)
   
   
-  print(img_logo)
+  
   
 
 
