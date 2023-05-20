@@ -12,7 +12,7 @@ Item_types = [electronics,wiring,tools,pchardware,documents,printer]
 def display_options(options):
   n = 1
   for option in options:
-    print(n,option + "\n \n \n")
+    print(n,option + "\n")
     n += 1
 
 def display_menu():
@@ -20,7 +20,7 @@ def display_menu():
   _   _   _  
  / \ / \ / \ 
 ( I | M | S )
- \_/ \_/ \_/  \n \n \n \n \n \n \n \n
+ \_/ \_/ \_/  \n \n \n \n \n 
 
  Welcome to Inventory Management Software
  What you want to do?\n \n \n
