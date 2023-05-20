@@ -45,6 +45,7 @@ def display_menu():
   print(img_logo)
   #scans the user input and saves it
   answer = display_options(start_options)
+  return answer
   
   
   
@@ -64,7 +65,12 @@ def search_menu():
 
 
 
-display_menu()
+answer = display_menu()
+if answer == 1:
+  pass
+elif answer == 2:
+  search_menu()
+  
 
 
 
