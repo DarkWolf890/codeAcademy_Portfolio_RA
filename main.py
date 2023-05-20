@@ -14,7 +14,10 @@ def display_options(options):
   for option in options:
     print(n,option + "\n")
     n += 1
-  return (input("Select typing any option number."))
+  answer = input("Select typing any option number.")  
+  print("you selected",answer)
+
+
 
 def display_menu():
   img_logo =  '''
@@ -36,6 +39,7 @@ def display_menu():
 start_options = ["Add an Item","Search an Item","Remove an Item","Settings",]
 display_menu()
 display_options(start_options)
+print()
 
 
 
