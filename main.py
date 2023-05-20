@@ -46,7 +46,14 @@ def display_menu():
   #scans the user input and saves it
   answer = display_options(start_options)
   return answer
-  
+
+def add_menu():
+  pass
+def remove_menu():
+  pass
+def settings_menu():
+  pass
+
   
   
 def search_menu():
@@ -68,9 +75,15 @@ def search_menu():
 answer = display_menu()
 print(answer)
 if answer == 1:
-  pass
+  add_menu()
 elif answer == 2:
   search_menu()
+elif answer == 3:
+  remove_menu()
+elif answer == 4:
+  settings_menu()
+else:
+  answer = input("Resposta invalida, prueba otra vez.")
 
 
 
