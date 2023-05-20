@@ -21,12 +21,14 @@ def display_menu():
   _   _   _  
  / \ / \ / \ 
 ( I | M | S )
- \_/ \_/ \_/ \n \n \n \n \n
+ \_/ \_/ \_/  \n \n \n \n \n
 
  Welcome to Inventory Management Software
  What you want to do?
 '''
-print(img_logo)
+  print(img_logo)
+  
+
 
 
 
