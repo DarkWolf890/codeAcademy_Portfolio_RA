@@ -13,7 +13,7 @@ def display_options(options):
   n = 1
   for option in options:
     print(n,option)
-    n =+ 1
+    n += 1
 
 def display_menu():
   img_logo =  '''
