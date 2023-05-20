@@ -10,9 +10,15 @@ documents = ["manuals","studies"]
 printer = []
 Item_types = [electronics,wiring,tools,pchardware,documents,printer]
 
+def display_options(options):
+  n = 1
+  for option in options:
+    print(n,option)
+    n =+ 1
+
 def display_menu():
-  ims_logo =  '''
-    _   _   _  
+  img_logo =  '''
+  _   _   _  
  / \ / \ / \ 
 ( I | M | S )
  \_/ \_/ \_/ \n \n \n \n \n
