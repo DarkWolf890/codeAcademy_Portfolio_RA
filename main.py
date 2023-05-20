@@ -1,6 +1,8 @@
 from random import randint as r
 
 # This variables will be accesible and editable in the program but i put some of them for testing
+
+items = [[[""],[""],[1]]]
 electronics = ["capacitor","Resistor","mcu","transistor","relay"]
 wiring = ["singlecore","multicore"]
 tools = []
@@ -46,7 +48,16 @@ def display_menu():
   
   
   
-  
+def search_menu():
+  search_title = '''
+    _   _   _   _     _   _   _   _   _   _   _   _   _     _   _   _   _   _   _  
+ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ / \ / \ / \   / \ / \ / \ / \ / \ / \ 
+( I | T | E | M ) ( S | E | A | R | C | H | I | N | G ) ( E | N | G | I | N | E )
+ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/ \_/   \_/ \_/ \_/ \_/ \_/ \_/ 
+ '''
+  print(search_title)
+  for item in items:
+    print(item)  
 
 
 
