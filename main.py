@@ -20,15 +20,13 @@ def display_options(options):
   for option in options:
     print(n,option + "\n")
     n += 1
-  answer = input("Select typing any option number.")  
-  print("you selected",answer)
-  return answer
   
+def display_menu_title(title):
+  print(title)
 
 #start menu page options
 start_options = ["Add an Item","Search an Item","Remove an Item","Settings",]
 #Principal menu of the program, simple but not ugly, perfect.
-
 
 def display_menu():
 

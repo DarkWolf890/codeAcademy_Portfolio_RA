@@ -1,0 +1,17 @@
+-clear display
+-display menu title 
+-display menu options
+-check option selected
+
+classes
+menu(title,options)
+ clear menu
+ set page
+ display title
+ display options
+ check for user input
+ change page
+ add page 
+ remove page
+  
+ 
