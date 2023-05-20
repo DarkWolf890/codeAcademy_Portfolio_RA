@@ -14,6 +14,9 @@ def display_options(options):
   for option in options:
     print(n,option + "\n")
     n += 1
+  if input in range(1,n):
+      answer = input
+      return answer   
 
 def display_menu():
   img_logo =  '''
@@ -23,7 +26,7 @@ def display_menu():
  \_/ \_/ \_/  \n \n \n \n \n 
 
  Welcome to Inventory Management Software
- What you want to do?\n \n \n
+ What do you want to do?\n \n \n
 '''
   print(img_logo)
   
