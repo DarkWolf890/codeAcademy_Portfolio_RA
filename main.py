@@ -26,4 +26,5 @@ class Menu():
         display_options(self)
         page(self)
 
-
+menu = Menu()
+menu.display_page
