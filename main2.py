@@ -25,9 +25,6 @@ class Menu():
         self.freshId = + 1
 
     # This is the first thing the program does
-    add_menu_data
-    csv_file = get_menu_data
-    print(csv_file)
-
+    
 
 menu = Menu()
