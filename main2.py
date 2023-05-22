@@ -1,5 +1,5 @@
 """menu manager"""
-import csv
+
 
 class Menu():
     """this class is for displaying the menu and managing the user input only"""
@@ -23,8 +23,11 @@ class Menu():
             every option with : for separation""")
             csv_file.write(csv_line_to_append+self.freshId)
         self.freshId = + 1
+    def delete_menu_data(self):
+        """deletes a menu page"""
+        
 
     # This is the first thing the program does
-    
-
+    csv_menu = get_menu_data
+    print(csv_menu)
 menu = Menu()
