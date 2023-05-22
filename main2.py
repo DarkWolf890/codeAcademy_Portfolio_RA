@@ -8,26 +8,14 @@ class Menu():
     def __init__(self, freshId=0):
         self.freshId = freshId
 
-    # This are functions for reading and updating the menu data
+    with open("data.txt") as data_file:
+        data = data_file.read()
+    
+    
 
-    def get_menu_data(self):
-        """This functions stores the csv in a string"""
-        with open("data.txt") as csv_file:
-            csv_data = csv_file.read()
-        return str(csv_data)
-
-    def add_menu_data(self):
-        """This function appends a new menu display"""
-        with open("data.txt", "a") as csv_file:
-            csv_line_to_append = input("""Insert the title followed by a comma, then type 
-            every option with : for separation""")
-            csv_file.write(csv_line_to_append+self.freshId)
-        self.freshId = + 1
-    def delete_menu_data(self):
-        """deletes a menu page"""
-        
+    
 
     # This is the first thing the program does
-    csv_menu = get_menu_data
-    print(csv_menu)
+    
+    print(data)
 menu = Menu()
