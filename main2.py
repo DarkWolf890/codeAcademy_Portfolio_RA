@@ -14,7 +14,7 @@ class Menu():
         """This functions stores the csv in a string"""
         with open("data.csv") as csv_file:
             csv_data = csv_file.read()
-        return csv_data
+        return str(csv_data)
 
     def add_menu_data(self):
         """This function appends a new menu display"""
