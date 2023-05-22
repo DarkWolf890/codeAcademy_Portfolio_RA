@@ -10,7 +10,9 @@ class Menu():
 
     with open("data.txt") as data_file:
         data_headers = data_file.readline()
-        data = data_file.readline()
+        data = []
+        for data_line in data_file:
+            data.append(data_file.readline())
     
     
 
