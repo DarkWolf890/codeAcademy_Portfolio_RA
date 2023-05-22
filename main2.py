@@ -9,7 +9,9 @@ class Menu():
         self.freshId = freshId
 
     with open("data.txt") as data_file:
-        data = data_file.read()
+        data_headers = data_file.readline()
+        for data_line in data_file:
+            data = data_file.readline()
     
     
 
@@ -17,5 +19,6 @@ class Menu():
 
     # This is the first thing the program does
     
+    print(data_headers)
     print(data)
 menu = Menu()
